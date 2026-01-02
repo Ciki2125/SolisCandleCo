@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Solis Candle Co.</title>
+  <meta name="description" content="Solis Candle Co. — lumânări premium." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="top" id="top">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Acasă">
+        <span class="brand__name">Solis Candle Co.</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Navigație">
+        <a href="#shop">Shop</a>
+        <a href="#gallery">Galerie</a>
+        <a href="#about">Cine suntem</a>
+        <a href="#ingredients">Din ce sunt</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="cartBtn" id="openCart" aria-label="Deschide coșul">
+        <span class="cartIcon" aria-hidden="true">🛒</span>
+        <span class="cartBadge" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img class="hero__img" src="hero.jpg" alt="Solis Candle Co. imagine principală" />
+    <div class="hero__overlay">
+      <div class="container hero__content">
+        <h1>Solis Candle Co.</h1>
+        <p>Lumânări realizate din pasiune, arome atent alese, menite să creeze o atmosferă plăcută și relaxantă.</p>
+        <div class="hero__cta">
+          <a class="btn" href="#shop">Shop</a>
+          <a class="btn btn--ghost" href="#about">Cine suntem</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- “A doua pagină” (secțiune) cu buton SHOP peste imagine -->
+  <section class="banner">
+    <img class="banner__img" src="slide2.jpg" alt="Lumânare Solis" />
+    <div class="banner__overlay">
+      <div class="container banner__content">
+        <h2>Noua colecție</h2>
+        <p>Aprinde vibe-ul.</p>
+        <a class="btn" href="#shop">Shop acum</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- SHOP -->
+    <section id="shop" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Shop</h2>
+          <p>Colectia noastră de lumanări, create pentru momentele care chiar contează.</p>
+        </div>
+
+        <div class="products">
+          <!-- Produs 1 -->
+          <article class="product">
+            <img src="slide5.jpg" alt="Turtă dulce">
+            <div class="product__body">
+              <h3>Turtă dulce</h3>
+              <p>Aromă caldă, dulce, de sărbătoare</p>
+              <div class="product__buy">
+                <span class="price">39.99 lei</span>
+                <button class="btn btn--small"
+                        data-add
+                        data-id="Turtă dulce"
+                        data-name="Turtă dulce"
+                        data-price="39.99"
+                        data-img="slide5.jpg">
+                  Adaugă în coș
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Produs 2 -->
+          <article class="product">
+            <img src="slide4.jpg" alt="Solis - Vanilie">
+            <div class="product__body">
+              <h3>Vanilie</h3>
+              <p>Fină, linistitoare.</p>
+              <div class="product__buy">
+                <span class="price">39.99 lei</span>
+                <button class="btn btn--small"
+                        data-add
+                        data-id="vanilie"
+                        data-name="Vanilie"
+                        data-price="39.99"
+                        data-img="slide4.jpg">
+                  Adaugă în coș
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Produs 3 -->
+          <article class="product">
+            <img src="slide3.jpg" alt="Solis - Scorțișoară">
+            <div class="product__body">
+              <h3>Scorțișoară</h3>
+              <p>Intensă, caldă, ușor condimentată.</p>
+              <div class="product__buy">
+                <span class="price">39.99 lei</span>
+                <button class="btn btn--small"
+                        data-add
+                        data-id="scorțișoară"
+                        data-name="Scorțișoară"
+                        data-price="39.99"
+                        data-img="slide3.jpg">
+                  Adaugă în coș
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Produs 4 -->
+          <article class="product">
+            <img src="slide8.jpg" alt="Solis - Lavandă">
+            <div class="product__body">
+              <h3>Lavandă</h3>
+              <p>Calm, relaxare, aer curat.</p>
+              <div class="product__buy">
+                <span class="price">39.99 lei</span>
+                <button class="btn btn--small"
+                        data-add
+                        data-id="lavandă"
+                        data-name="Lavandă"
+                        data-price="39.99"
+                        data-img="slide8.jpg">
+                  Adaugă în coș
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Produs 5 -->
+          <article class="product">
+            <img src="slide7.jpg" alt="Solis - Orhidee">
+            <div class="product__body">
+              <h3>Orhidee</h3>
+              <p>Florată, elegantă, rafinată</p>
+              <div class="product__buy">
+                <span class="price">39.99 lei</span>
+                <button class="btn btn--small"
+                        data-add
+                        data-id="orhidee"
+                        data-name="Orhidee"
+                        data-price="39.99"
+                        data-img="slide7.jpg">
+                  Adaugă în coș
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Produs 6 -->
+          <article class="product">
+            <img src="slide6.jpg" alt="Solis - Liliac">
+            <div class="product__body">
+              <h3>Liliac</h3>
+              <p>Florală, de primăvară.</p>
+              <div class="product__buy">
+                <span class="price">39.99 lei</span>
+                <button class="btn btn--small"
+                        data-add
+                        data-id="liliac"
+                        data-name="Liliac"
+                        data-price="39.99"
+                        data-img="slide6.jpg">
+                  Adaugă în coș
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIE slider -->
+    <section id="gallery" class="section section--soft">
+      <div class="container">
+        <div class="section__head">
+          <h2>Galerie</h2>
+          <p>Poze + descrieri.</p>
+        </div>
+
+        <div class="slider">
+          <button class="slider__btn slider__btn--prev" aria-label="Imaginea anterioară">‹</button>
+
+          <div class="slider__viewport" tabindex="0">
+            <div class="slider__track">
+              <figure class="slide">
+                <img src="slide9.jpg" alt="Lumânare pe masă">
+                <figcaption>Minimal, perfect pentru living.</figcaption>
+              </figure>
+              <figure class="slide">
+                <img src="slide1.jpg" alt="Lumânare lângă cutie Solis">
+                <figcaption>Detalii care fac diferența</figcaption>
+              </figure>
+              <figure class="slide">
+                <img src="slide10.jpg" alt="Momentul tău">
+                <figcaption>O pauză care chiar contează</figcaption>
+              </figure>
+              <figure class="slide">
+                <img src="images/slide4.jpg" alt="Lumânare pe masă, scorțișoară în cadru">
+                <figcaption>Note spicy, instant cozy.</figcaption>
+              </figure>
+              <figure class="slide">
+                <img src="images/slide5.jpg" alt="Lumânare aprinsă pe fundal de lumini">
+                <figcaption>Warm + aesthetic.</figcaption>
+              </figure>
+              <figure class="slide">
+                <img src="images/slide6.jpg" alt="Lumânare aproape, fundal texturat">
+                <figcaption>Detalii simple, efect mare.</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <button class="slider__btn slider__btn--next" aria-label="Imaginea următoare">›</button>
+        </div>
+
+        <div class="slider__meta">
+          <div class="dots"></div>
+          <div class="controls">
+            <button class="chip" id="toggleAutoplay" type="button">⏸ Pauză</button>
+            <span class="hint">Swipe / săgeți / click</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CINE SUNTEM -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>Cine suntem</h2>
+        <p class="muted">
+          Solis Candle Co. a pornit din dorința de a crea lumânări handmade care să facă mai mult decât să arate bine. Suntem atenți la detalii, la modul în care arde lumânarea, la aromă și la experiența finală. Lucrăm cu arome echilibrate și design minimalist, pentru a îmbina performanța cu simplitatea și a crea o atmosferă plăcută, fără compromisuri.
+        </p>
+      </div>
+    </section>
+
+    <!-- DIN CE SUNT -->
+    <section id="ingredients" class="section section--soft">
+      <div class="container">
+        <h2>Din ce sunt produsele</h2>
+        <ul class="bullets">
+          <li><b>Ceară:</b> Ingrediente naturale: soia 90% si parafina 10%</li>
+          <li><b>Fitil:</b> Bumbac</li>
+          <li><b>Parfum:</b> Ulei de parfum</li>
+          <li><b>Recipient:</b> Recipient din sticlă, negru mat</li>
+        </ul>
+        <p class="muted">Parfum care se simte rapid în încăpere</p>
+        <p class="muted">Timp de ardere, aproximativ 22h</p>
+        <p class="muted">Fără toxine, fără alergeni</p>
+        <p class="muted">Handmade, fiecre bucată este unica</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="muted">Întrebări / colaborări / comenzi custom.</p>
+        <div class="contact">
+          <a class="btn" href="mailto:hello@soliscandle.co">Email</a>
+          <a class="btn btn--ghost" href="https://www.instagram.com/soliscandle.co?igsh=cnZnNHUyNXI3b2ln" target="_blank">Instagram</a>
+          <a class="btn btn--ghost" href="https://www.tiktok.com/@solis.candle.co?_r=1&_t=ZN-92SeF6gEdU6" target="_blank">TikTok</a>
+          <a class="btn btn--ghost" href="https://wa.me/40737809546" target="_blank">0737809546</a>
+          <a class="btn btn--ghost" href="https://wa.me/40724572555" target="_blank">0724572555</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>© <span id="year"></span> Solis Candle Co.</small>
+    </div>
+  </footer>
+
+  <!-- CART DRAWER -->
+  <aside class="cart" id="cart" aria-hidden="true">
+    <div class="cart__panel" role="dialog" aria-label="Coșul tău">
+      <div class="cart__head">
+        <h3>Coș</h3>
+        <button class="iconBtn" id="closeCart" aria-label="Închide">✕</button>
+      </div>
+
+      <div class="cart__items" id="cartItems"></div>
+
+      <div class="cart__footer">
+        <div class="cart__total">
+          <span>Total</span>
+          <b id="cartTotal">0 lei</b>
+        </div>
+
+        <button class="btn" id="goCheckout">Finalizează (ramburs)</button>
+        <button class="btn btn--ghost" id="clearCart">Golește coșul</button>
+
+        <p class="muted tiny">Plată: <b>ramburs (cash la livrare)</b>.</p>
+      </div>
+    </div>
+    <div class="cart__backdrop" id="cartBackdrop"></div>
+  </aside>
+
+  <!-- CHECKOUT MODAL -->
+  <section class="modal" id="checkout" aria-hidden="true">
+    <div class="modal__panel" role="dialog" aria-label="Checkout">
+      <div class="modal__head">
+        <h3>Checkout</h3>
+        <button class="iconBtn" id="closeCheckout" aria-label="Închide">✕</button>
+      </div>
+
+      <form id="checkoutForm" class="form">
+        <div class="form__row">
+          <label>Nume</label>
+          <input name="name" required placeholder="Nume Prenume" />
+        </div>
+
+        <div class="form__row">
+          <label>Telefon</label>
+          <input name="phone" required placeholder="07xx xxx xxx" />
+        </div>
+
+        <div class="form__row">
+          <label>Email</label>
+          <input name="email" type="email" placeholder="email@exemplu.ro" />
+        </div>
+
+        <div class="form__row">
+          <label>Adresă completă</label>
+          <textarea name="address" required rows="3" placeholder="Stradă, nr, bloc, ap, oraș, județ"></textarea>
+        </div>
+
+        <div class="form__row">
+          <label>Observații (opțional)</label>
+          <textarea name="notes" rows="2" placeholder="Ex: sună înainte / interfon / etc"></textarea>
+        </div>
+
+        <input type="hidden" name="payment" value="Ramburs (plată la livrare)" />
+        <input type="hidden" name="order" id="orderField" value="" />
+
+        <button class="btn" type="submit">Trimite comanda</button>
+        <p class="muted tiny">Comanda ajunge prin email</p>
+      </form>
+    </div>
+    <div class="modal__backdrop" id="checkoutBackdrop"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
